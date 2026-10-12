@@ -1,0 +1,6 @@
+{
+  "name": "Kartova Multi-Vendor Marketplace",
+  "description": "Premium multi-vendor e-commerce marketplace featuring unified Customer shopping, Seller portal with KYC & inventory, and Admin governance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

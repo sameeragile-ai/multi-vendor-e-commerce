@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Fraunces', Georgia, serif;
+  --color-kartova-coral: #FF6B4A;
+  --color-kartova-amber: #FFB547;
+  --color-kartova-teal: #0F766E;
+  --color-kartova-ink: #14141A;
+  --color-kartova-muted: #6B6B76;
+  --color-kartova-canvas: #FAF8F5;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FAF8F5;
+  color: #14141A;
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Subtle custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #E2DFD9;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C8C5BD;
+}
+
+/* Kartova Signature Gradient Utilities */
+.bg-gradient-brand {
+  background: linear-gradient(135deg, #FF6B4A 0%, #FFB547 100%);
+}
+
+.text-gradient-brand {
+  background: linear-gradient(135deg, #FF6B4A 0%, #FFB547 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-brand-primary {
+  background: linear-gradient(135deg, #FF6B4A 0%, #FF9238 100%);
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px 0 rgba(255, 107, 74, 0.25);
+}
+.btn-brand-primary:hover {
+  background: linear-gradient(135deg, #F05E3D 0%, #F5862A 100%);
+  box-shadow: 0 6px 20px 0 rgba(255, 107, 74, 0.35);
+  transform: translateY(-1px);
+}
+.btn-brand-primary:active {
+  transform: translateY(0);
+}
